@@ -14,11 +14,6 @@ class AgenteAcademico:
         self.motor_inferencia = MotorInferencia()
 
     def evaluar_estudiante(self, percepciones: Percepciones) -> Dict:
-        """
-        Evalúa un estudiante y genera recomendaciones
-
-        Ciclo: Percepción → Base de Conocimiento → Motor de Inferencia → Acción
-        """
 
         # FASE 1: Percepción → Base de Conocimiento
         hechos = {}
@@ -63,7 +58,6 @@ class AgenteAcademico:
     def _generar_recomendacion_final(
         self, rendimiento: NivelRendimiento, recomendaciones: List[Recomendacion]
     ) -> str:
-        """Genera recomendación final basada en el nivel de rendimiento"""
 
         if rendimiento == NivelRendimiento.ALTO:
             return (

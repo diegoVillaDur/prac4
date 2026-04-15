@@ -10,7 +10,6 @@ class BaseConocimiento:
     def evaluar_habitos_estudio(
         percepciones: Percepciones,
     ) -> Tuple[str, Recomendacion]:
-        """Evalúa hábitos de estudio"""
         horas = percepciones.horas_estudio
         apuntes = percepciones.calidad_apuntes
 
@@ -46,7 +45,6 @@ class BaseConocimiento:
 
     @staticmethod
     def evaluar_gestion_tareas(percepciones: Percepciones) -> Tuple[str, Recomendacion]:
-        """Evalúa gestión de tareas pendientes"""
         tareas = percepciones.tareas_atrasadas
         tiempo_org = percepciones.tiempo_organizacion
 
@@ -84,7 +82,6 @@ class BaseConocimiento:
     def evaluar_actividad_fisica(
         percepciones: Percepciones,
     ) -> Tuple[str, Recomendacion]:
-        """Evalúa nivel de actividad física"""
         actividad = percepciones.actividad_fisica_minutos
         sedentarismo = percepciones.horas_sedentarismo
 
@@ -120,7 +117,6 @@ class BaseConocimiento:
 
     @staticmethod
     def evaluar_nivel_estres(percepciones: Percepciones) -> Tuple[str, Recomendacion]:
-        """Evalúa nivel de estrés"""
         estres = percepciones.nivel_estres
         apoyo = percepciones.apoyo_emocional
 
@@ -156,7 +152,6 @@ class BaseConocimiento:
 
     @staticmethod
     def evaluar_habitos_sueno(percepciones: Percepciones) -> Tuple[str, Recomendacion]:
-        """Evalúa hábitos de sueño"""
         cafeina = percepciones.tazas_cafeina
         pantalla = percepciones.minutos_pantalla_noche
 
